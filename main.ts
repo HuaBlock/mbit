@@ -159,7 +159,7 @@ namespace HuaRobot_M1_显示类 {
  ****************************************************************************************************************************************/
 
 //% color="#87CEEB" weight=24 icon="\uf1b6"
-namespace HuaRobot_M1_传感器类 {
+namespace HuaBlock_无线遥控 {
 
     export enum enVoice {
         //% blockId="Voice" block="有声音"
@@ -257,7 +257,7 @@ namespace HuaRobot_M1_传感器类 {
  ****************************************************************************************************************************************/
 
 //% color="#808080" weight=23 icon="\uf11c"
-namespace HuaRobot_M1_输入类 {
+namespace HuaBlock_传感器类 {
 
     export enum enRocker {
         //% blockId="Nostate" block="无"
@@ -370,36 +370,36 @@ namespace HuaRobot_M1_输入类 {
  ****************************************************************************************************************************************/
 
 //% color="#D2691E" weight=22 icon="\uf001"
-namespace HuaRobot_M1_音乐类 {
-    export enum enBuzzer {
+// namespace HuaRobot_M1_音乐类 {
+//     export enum enBuzzer {
 
-        //% blockId="NoBeep" block="不响"
-        NoBeep = 0,
-        //% blockId="Beep" block="响"
-        Beep
-    }
+//         //% blockId="NoBeep" block="不响"
+//         NoBeep = 0,
+//         //% blockId="Beep" block="响"
+//         Beep
+//     }
 
-    //% blockId=M1_Buzzer block="Buzzer|pin %pin|value %value"
-    //% weight=100
-    //% blockGap=10 
-    //% color="#D2691E"
-    //% value.min=0 value.max=1
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=8
-    export function Buzzer(pin: DigitalPin, value: enBuzzer): void {
+//     //% blockId=M1_Buzzer block="Buzzer|pin %pin|value %value"
+//     //% weight=100
+//     //% blockGap=10 
+//     //% color="#D2691E"
+//     //% value.min=0 value.max=1
+//     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=8
+//     export function Buzzer(pin: DigitalPin, value: enBuzzer): void {
 
-        pins.setPull(pin, PinPullMode.PullNone);
-        pins.digitalWritePin(pin, value);
+//         pins.setPull(pin, PinPullMode.PullNone);
+//         pins.digitalWritePin(pin, value);
 
-    }
+//     }
 
-}
+// }
 
 /*****************************************************************************************************************************************
  *    电机类 *****************************************************************************************************************************
  ****************************************************************************************************************************************/
 
 //% color="#0000CD" weight=21 icon="\uf185"
-namespace HuaRobot_M1_电机类 {
+namespace HuaBlock_电机舵机 {
 
     //% blockId=M1_Fan block="Fan|pin %pin|speed %value"
     //% weight=100
@@ -428,7 +428,7 @@ namespace HuaRobot_M1_电机类 {
 }
 
 //% color="#006400" weight=20 icon="\uf1b9"
-namespace HuaRobot_M1_小车类 {
+namespace HuaBlock_积木小车 {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
